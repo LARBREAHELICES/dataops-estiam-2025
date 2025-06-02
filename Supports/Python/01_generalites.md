@@ -152,3 +152,47 @@ def jour(j):
 ```
 
 ---
+
+## Le slicing (tranchage) en Python
+
+Le slicing permet d'extraire une **sous-partie** d'une séquence (liste, tableau, chaîne…) en utilisant la notation :
+
+```python
+sequence[start:stop:step]
+```
+
+* **start** : indice de début (inclusif), par défaut `0`
+* **stop** : indice de fin (exclusif), par défaut la fin de la séquence
+* **step** : pas d'incrément, par défaut `1`
+
+---
+
+### Exemples
+
+```python
+arr = np.array([10, 20, 30, 40, 50, 60])
+```
+
+* `arr[1:4]` → éléments aux indices 1 à 3 : `[20, 30, 40]`
+* `arr[:3]` → du début à l'indice 2 : `[10, 20, 30]`
+* `arr[3:]` → de l'indice 3 jusqu'à la fin : `[40, 50, 60]`
+* `arr[::2]` → tous les 2 éléments (pas = 2) : `[10, 30, 50]`
+* `arr[::-1]` → inverse le tableau : `[60, 50, 40, 30, 20, 10]`
+
+---
+
+### Particularités avec NumPy
+
+* Le slicing retourne une **vue mémoire**, pas une copie. Modifier le slice modifie l'original.
+* On peut slicer sur plusieurs dimensions : `arr[1:3, 2:5]` (2D).
+* On peut utiliser des indices négatifs : `arr[-3:]` (les 3 derniers éléments).
+
+---
+
+### Conseils pratiques
+
+* `start` inclus, `stop` exclu → ça veut dire que le slice s'arrête juste avant `stop`.
+* Attention aux erreurs de `IndexError` si on sort des bornes, mais en slicing Python, on est généralement toléré (ex: `arr[2:100]` ne pose pas problème même si 100 est hors borne).
+* Pour manipuler des fenêtres glissantes, on peut combiner slicing et boucles, ou utiliser `sliding_window_view` en NumPy.
+
+---

@@ -8,6 +8,8 @@
 
 3. Numpy et Pands [cours Numpy](./Numpy/) [cours Pandas](./Pandas/) 
 
+    3.1 Exercices [temperature](../Exercices/Numpy/exercice_temperature.md)
+
 ## Annexes
 
 1. Moyenne glissée [moyenne glissée](./datops_moyenne_glissee.md)
