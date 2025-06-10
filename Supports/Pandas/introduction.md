@@ -37,7 +37,6 @@ df = pd.DataFrame({
 })
 print(df["name"])      # Colonne
 print(df.loc[1])       # Ligne par label
-print(df.iloc[0])      # Ligne par index
 ```
 
 ---
