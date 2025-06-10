@@ -151,9 +151,8 @@ def sieve_np(n: int) -> np.ndarray:
 | ------------------ | -------------------------- |
 | Création tableau   | `np.array([1, 2, 3])`      |
 | Formes & reshaping | `.shape`, `.reshape()`     |
-| Opérations rapides | `a + b`, `a @ b`, `a > 0`  |
+| Broadcasting       |  `a + b`, `a @ b`, `a > 0`  |
 | Agrégats           | `sum()`, `mean()`, `max()` |
 | Slicing / Masquage | `a[a > 10]`                |
-| Broadcasting       | opérations auto-alignées   |
 
 ---
