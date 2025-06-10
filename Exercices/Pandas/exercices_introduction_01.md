@@ -89,4 +89,32 @@ df = pd.DataFrame({
 
 ```
 
+##  ✅ **Exercice 6 – Ajoutez les lignes suivantes au dataframe df**
+
+-  David, 40
+-  Elise 43
+-  Sophie 25
+
+```python
+df = pd.DataFrame({
+    "name": ["Alice", "Bob", "Charlie"], # colonne
+    "age": [25, 30, 35]
+}, index = ["a", "b", "c"] )
+
+```
+
+##  ✅ **Exercice 7 – A l'aide de la méthode concat ajoutez ajoutez le dataframe df2 à df**
+
+
+Utilisez la documentation en ligne 
+
+
+```python
+df2 = pd.DataFrame({
+    "name": ["Antoine", "Noan", "David", "Kevin", "Clément", "Rami"], # colonne
+    "age": [25, 30, 35, 45, 30, 35]
+}, index = ["a", "b", "c", "d", "e", "f"] )
+
+```
+
 ---
