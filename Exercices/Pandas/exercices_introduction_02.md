@@ -59,8 +59,7 @@ df = pd.DataFrame({
 **Tâches :**
 
 1. Remplis les `NaN` par la moyenne des températures connues.
-2. Remplis les `NaN` par interpolation linéaire.
-3. Quelle différence entre les deux résultats ?
+
 
 ---
 
